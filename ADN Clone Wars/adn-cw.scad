@@ -26,8 +26,8 @@ module adncw(text="texto"){
     }
 }
 
-adncw("#15 Ociorum");
-
+atcg = "#15 Ociorum";
+adncw(atcg);
 
 
 
