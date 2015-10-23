@@ -12,10 +12,9 @@ echo $VER
 
 while read ; do
 
-	[[ $REPLY =~ ^([0-9]+)\ (.+)$ ]]
+	[[ $REPLY =~ ^([0-9]+)[\\t\ ](.+)$ ]]
 	NUM=${BASH_REMATCH[1]}
         NAME=${BASH_REMATCH[2]}
-	ACTG="$NUM_$NAME"
 
 	OUT="$DIR/$NUM.stl"
 	echo "Generating $OUT"
