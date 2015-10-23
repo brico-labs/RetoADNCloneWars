@@ -2,6 +2,7 @@
 
 SRC='adn-cw.scad'
 BIN='openscad'
+DIR='../stl'
 
 VER=$($BIN --version 2>&1)
 
@@ -16,7 +17,7 @@ while read ; do
         NAME=${BASH_REMATCH[2]}
 	ACTG="$NUM_$NAME"
 
-	OUT="$NUM.stl"
+	OUT="$DIR/$NUM.stl"
 	echo "Generating $OUT"
 	$BIN -o "$OUT" -D num="\"$NUM\"" -D name="\"$NAME\"" "$SRC"
 done
