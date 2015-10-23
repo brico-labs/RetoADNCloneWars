@@ -52,14 +52,14 @@ module adncw(num, name){
         // texto superior (num)
         translate([largo/2,ancho/2-anchoextrusion/2,grosor/2+1]) {                          
             linear_extrude(height = 3) {
-                text(name, font = "Liberation Sans", size = 10, valign="top", halign="center");
+                text(name, font = "Liberation Sans", size = 8, valign="top", halign="center");
             }
         }
 
         // texto inferior (name)
         translate([largo/2,ancho/2+anchoextrusion/2,grosor/2+1]) {                          
             linear_extrude(height = 3) {
-                text(num, font = "Liberation Sans", size = 10, valign="bottom", halign="center");
+                text(num, font = "Liberation Sans", size = 8, valign="bottom", halign="center");
             }
         }
     }    
