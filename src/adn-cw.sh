@@ -16,7 +16,7 @@ while read ; do
         NAME=${BASH_REMATCH[2]}
 	ACTG="$NUM_$NAME"
 
-	OUT=$(echo "$ACTG.stl" | tr ' ' '_')
+	OUT="$NUM.stl"
 	echo "Generating $OUT"
 	$BIN -o "$OUT" -D num="\"$NUM\"" -D name="\"$NAME\"" "$SRC"
 done
