@@ -1,7 +1,8 @@
+# Reto ADN CloneWars
+
 Con motivo de la celebración de la OSHWDem 2015 [1] el día 7 de noviembre, y a partir de una idea de que surgió en la OSHWDem del año pasado al ver esta cadena de ADN que cuelga del techo de la Domus:
 
-
-DSC_5656.NEF.jpg
+![ADN](https://scontent-mad1-1.xx.fbcdn.net/hphotos-xpt1/t31.0-8/12141113_963354940404606_7521211884426296075_o.jpg)
 
 Se propone el reto de imprimir las piezas de unión para algo similar con todas las piezas personalizadas con el número y nombre de la impresora para formar lo que sería el ADN de Clone Wars.
 
