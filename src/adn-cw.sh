@@ -18,6 +18,6 @@ while read ; do
 
 	OUT=$(echo "$ACTG.stl" | tr ' ' '_')
 	echo "Generating $OUT"
-	$BIN -o "$OUT" -D num=\"#"$NUM"\" -D name=\""$NAME"\" "$SRC"
+	$BIN -o "$OUT" -D num="\"$NUM\"" -D name="\"$NAME\"" "$SRC"
 done
 
