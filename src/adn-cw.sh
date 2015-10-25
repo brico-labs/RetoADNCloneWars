@@ -17,7 +17,11 @@ while read ; do
         NAME=${BASH_REMATCH[2]}
 
 	OUT="$DIR/$NUM.stl"
-	echo "Generating $OUT"
-	$BIN -o "$OUT" -D num="\"$NUM\"" -D name="\"$NAME\"" "$SRC"
+	if [ ! -f $OUT ] ; then
+
+		echo "Generating $OUT"
+		$BIN -o "$OUT" -D num="\"$NUM\"" -D name="\"$NAME\"" "$SRC"
+
+	fi
 done
 
