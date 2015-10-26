@@ -1,10 +1,9 @@
 #!/bin/bash
 
 SRC='adn-cw.scad'
-BIN='openscad'
 DIR='../stl'
 
-VER=$($BIN --version 2>&1)
+VER=$($OPENSCAD --version 2>&1)
 
 [ $? -ne 1 ] && ( echo "$BIN not found" ; exit 1; )
 
@@ -20,7 +19,7 @@ while read ; do
 	if [ ! -f $OUT ] ; then
 
 		echo "Generating $OUT"
-		$BIN -o "$OUT" -D num="\"$NUM\"" -D name="\"$NAME\"" "$SRC"
+		$OPENSCAD -o "$OUT" -D num="\"$NUM\"" -D name="\"$NAME\"" "$SRC"
 
 	fi
 done
