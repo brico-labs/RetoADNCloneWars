@@ -18,9 +18,9 @@ __Las piezas se enhebrarán el día de la OSHWDem__ en un cable de acero y se at
 
 Las piezas pueden traerse __en persona a la OSHWDem el 7 de noviembre o enviarlas por correo antes del día 3 de noviembre__ (para dar tiempo a que llegue) a: 
 
- Domus - Reto Clone Wars
- c/. Ángel Rebollo, 91
- 15002 A Coruña
+    Domus - Reto Clone Wars
+    c/. Ángel Rebollo, 91
+    15002 A Coruña
 
 ¡Que la prusa os acompañe!
 
