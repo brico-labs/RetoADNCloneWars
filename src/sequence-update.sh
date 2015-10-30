@@ -9,35 +9,56 @@ OPENSCAD='/usr/bin/openscad'
 MD5='/usr/bin/md5sum'
 WGET='/usr/bin/wget'
 DATA_TMP='/tmp/pruseotidos.tsv'
-DATA="$BASEDIR/pruseotidos.tsv"
+DATA="$BASEDIR/sequence-data-test.scad"
 
 # checkpoint
 [ -e $DATA ] && BEFORE=$($MD5 $DATA)
 
-LOG=$($WGET --progress=dot --server-response --output-document=$DATA_TMP $GOOGLE_CALC 2>&1)
-if [ $? -ne 0 ] ; then 
-	echo "ERROR: Wget failed to get Google Calc"
-	echo "$LOG"
-	exit 1
-fi
+#LOG=$($WGET --progress=dot --server-response --output-document=$DATA_TMP $GOOGLE_CALC 2>&1)
+#if [ $? -ne 0 ] ; then 
+#	echo "ERROR: Wget failed to get Google Calc"
+#	echo "$LOG"
+#	exit 1
+#fi
+
+# template before
+echo "pair_data = ["
 
 # parse pruseotidos
-cat $TSV | while [ read ] ; do
+DATA_SIZE=0
+cut -f1,3,8 $TSV | while read ; do
+
+	#echo $REPLY
 
 	# matches number and name
-	if [[ $REPLY =~ ^([0-9]+)\\t([^\\t]+) ]] ; then
+	if [[ "$REPLY" =~ ^([0-9]+)[[:space:]]SI[[:space:]]([^[:space:]]+) ]] ; then
 
-		NUM=${BASH_REMATCH[1]}
-		NAME=${BASH_REMATCH[2]}
+		NUMBER=${BASH_REMATCH[1]}
+		COLOR=${BASH_REMATCH[2]}
 
-		echo "Filtering: $NUM $NAME"
+		echo "[$NUMBER, \"$COLOR\"],"
 
+		DATA_SIZE=$((DATA_SIZE += 1))
 	fi
 
 done
 
+# template before
+echo "[]];"
+echo "pair_data_size = $DATA_SIZE;"
+
+
+exit
+
 # checkpoint
 AFTER=$($MD5 $DATA)
+
+// test data has changed
+if [ $BEFORE != $AFTER ] ; then
+
+	# generate OpenSCAD view
+
+fi
 
 
 
