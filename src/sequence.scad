@@ -8,7 +8,8 @@ stl_translation = [7,0,-3];
 twist_turn = 35;
 twist_height = 33;
 twist_gap = 2;
-
+helix_angle = 3;
+helix_radius = 800;
 
 // pair generation
 for(pair = [1 : len(pair_data) / 2])
@@ -20,13 +21,19 @@ for(pair = [1 : len(pair_data) / 2])
 module build_twist (pair, stl_file_1, stl_color_1, stl_file_2, stl_color_2) {
 
   // pair 1
-  translate([0, 0, (twist_height + twist_gap) * pair])  
+  translate([
+			cos(helix_angle * pair) * helix_radius, 
+			sin(helix_angle * pair) * helix_radius, 
+			(twist_height + twist_gap) * pair])  
     color(stl_color_1)  
       rotate([90, 0, (twist_turn * pair)]) translate(stl_translation)
         import(stl_file_1, convexity = stl_convexity);
 
   // pair 2
-  translate([0, 0, ((twist_height + twist_gap) * pair) + 22])  
+  translate([
+			cos(helix_angle * pair) * helix_radius, 
+			sin(helix_angle * pair) * helix_radius, 
+			((twist_height + twist_gap) * pair) + 22])  
     color(stl_color_2)  
       rotate([90, 180, twist_turn * pair]) translate(stl_translation)
         import(stl_file_2, convexity = stl_convexity);
