@@ -35,6 +35,8 @@ El secuenciador virtual genera una imagen de como se ve el ADN CloneWars a
 partir de las pruseótidos impresos por los miembros de CloneWars y enviados a
 la Oshwdem 2015 para el reto #ADNCloneWars.
 
+![Primeros clones del proyecto][IMG01]
+
 ## Funcionamiento
 
 El _script Bash sequence-update.sh_ descarga la lista de pruseótidos impresos, 
@@ -45,5 +47,7 @@ Desde la _Google Calc_ se define el color de cada pruseótido (columna 'OpenSCAD
 Color'). Sólo se toman los que tienen la columna _Impreso_ a valor _SI_.
 
 
+[IMG01]: https://github.com/brico-labs/RetoADNCloneWars/tree/master/src/adn-cw-01.png
 
 [STL01]: https://github.com/brico-labs/RetoADNCloneWars/tree/master/stl
+
