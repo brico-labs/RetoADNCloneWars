@@ -7,11 +7,11 @@ stl_convexity = 5;
 stl_translation = [7,0,-3];
 twist_turn = 35;
 twist_height = 33;
-twist_gap = 1;
+twist_gap = 2;
 
 
 // pair generation
-for(pair = [1 : pair_data_size / 2])
+for(pair = [1 : len(pair_data) / 2])
   generate_twist(pair - 1);
 
 
