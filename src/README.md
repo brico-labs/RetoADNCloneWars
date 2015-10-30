@@ -47,7 +47,7 @@ Desde la _Google Calc_ se define el color de cada pruseótido (columna 'OpenSCAD
 Color'). Sólo se toman los que tienen la columna _Impreso_ a valor _SI_.
 
 
-[IMG01]: https://github.com/brico-labs/RetoADNCloneWars/tree/master/src/adn-cw-01.png
+[IMG01]: https://raw.githubusercontent.com/brico-labs/RetoADNCloneWars/master/src/adn-cw-01.png
 
 [STL01]: https://github.com/brico-labs/RetoADNCloneWars/tree/master/stl
 
