@@ -9,11 +9,11 @@ Los STL se generan en el [directorio stl][STL01].
 ## Configuración
 
 Crear el fichero adn-cl.list con los nombres de las impresoras que irán en el
-ADN. Un nombre por línea, no más de XXX caracteres por línea. Ejemplo:
+ADN.
 
-  1 R2D2
-  2 Death Star
-  3 Maese Artorius
+     1 R2D2
+     2 Death Star
+     3 Maese Artorius
 
 
 ## Ejecución para todas las bases del ADN
