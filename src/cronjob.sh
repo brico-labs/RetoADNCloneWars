@@ -20,4 +20,4 @@ $BASEDIR/sequence-update.sh
 # send changes
 $GIT add $BASEDIR/../*.stl 
 $GIT commit -m "Partial generation."
-#$GIT push 
+$GIT push 
