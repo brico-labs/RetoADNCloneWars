@@ -11,10 +11,13 @@ source $HOME/.ssh/agent/adn-cw.ssh-id
 # update
 $GIT pull 
 
-# generate
+# generate pruseotids
 $BASEDIR/adn-cw.sh < $BASEDIR/adn-cw.list 
+
+# generate sequence
+$BASEDIR/sequence-update.sh
 
 # send changes
 $GIT add $BASEDIR/../*.stl 
 $GIT commit -m "Partial generation."
-$GIT push 
+#$GIT push 

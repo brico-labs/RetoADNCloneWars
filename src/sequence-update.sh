@@ -2,6 +2,8 @@
 
 # config
 GOOGLE_CALC='https://docs.google.com/spreadsheets/d/1CEc78IfhfzFyl3C44KGNHMy91A-xR38lpYUZox4AY-k/pub?gid=0&single=true&output=tsv'
+IMG_WIDTH=640
+IMG_HEIGHT=2000
 
 # paths
 BASEDIR="$(dirname $0)"
@@ -10,10 +12,10 @@ MD5='/usr/bin/md5sum'
 CUT='/usr/bin/cut'
 WGET='/usr/bin/wget'
 DATA_TMP='/tmp/pruseotidos.tsv'
+SCAD="$BASEDIR/sequence.scad"
 DATA="$BASEDIR/sequence-data.scad"
 PNG_VIEW="$BASEDIR/sequence.png"
 
-echo "Data file is $DATA"
 
 # checkpoint
 [ -e $DATA ] && BEFORE=$($MD5 $DATA)
@@ -52,8 +54,8 @@ AFTER=$($MD5 $DATA)
 if [ "$BEFORE" != "$AFTER" ] ; then
 
 	# generate OpenSCAD view
-	echo "Generating new OpenSCAD view: $PNG_VIEW"
-
+#	echo "Generating new OpenSCAD view ($IMG_WIDTH x $IMG_HEIGHT): $PNG_VIEW"
+#	$OPENSCAD --imgsize=$IMG_WIDTH,$IMG_HEIGHT -o $PNG_VIEW $SCAD
 fi
 
 

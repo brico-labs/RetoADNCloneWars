@@ -12,7 +12,7 @@ helix_angle = 3;
 helix_radius = 800;
 
 // pair generation
-for(pair = [1 : len(pair_data) / 2])
+for(pair = [1 : (len(pair_data) / 2) - 1])
   generate_twist(pair - 1);
 
 
