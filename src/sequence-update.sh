@@ -54,7 +54,7 @@ AFTER=$($MD5 $DATA)
 if [ "$BEFORE" != "$AFTER" ] ; then
 
 	# generate OpenSCAD view
-#	echo "Generating new OpenSCAD view ($IMG_WIDTH x $IMG_HEIGHT): $PNG_VIEW"
+	echo "Generating new OpenSCAD view ($IMG_WIDTH x $IMG_HEIGHT): $PNG_VIEW"
 #	$OPENSCAD --imgsize=$IMG_WIDTH,$IMG_HEIGHT -o $PNG_VIEW $SCAD
 fi
 
