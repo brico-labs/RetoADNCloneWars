@@ -22,6 +22,8 @@ Todo miembro de Clone Wars puede participar, y se reparten las piezas con la ayu
 
 __Las piezas se enhebraron el día de la OSHWDem__ en un cable de acero y se atornillaron con dos tornillos cada una en una tira de PET que hace de la cadena. Tras el evento, quedarán en el patrimonio de Clone Wars.
 
+![Reto materializado el día de la OSHWDEM 2015][OSH01]
+
 ## Nuevas piezas
 
 Las nuevas piezas pueden __enviarse a Bricolabs por correo__ a: 
@@ -43,6 +45,7 @@ Las nuevas piezas pueden __enviarse a Bricolabs por correo__ a:
 [2]: https://github.com/brico-labs/RetoADNCloneWars
 [3]: http://maytheclonebewithyou.com
 [4]: https://docs.google.com/spreadsheets/d/1CEc78IfhfzFyl3C44KGNHMy91A-xR38lpYUZox4AY-k/edit?usp=sharing
+[OSH01]: https://raw.githubusercontent.com/brico-labs/RetoADNCloneWars/master/img/sequence-oshwdem.jpg
 [REN01]: http://brico-labs.github.io/RetoADNCloneWars/image_render/ADN_odd.html
 [REN02]: http://brico-labs.github.io/RetoADNCloneWars/image_render/ADN_3d_even.html
 [STL01]: https://github.com/brico-labs/RetoADNCloneWars/tree/master/stl
