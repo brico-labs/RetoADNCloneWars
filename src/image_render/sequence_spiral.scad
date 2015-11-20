@@ -13,19 +13,19 @@ helix_radius = 0;
 
 // pair generation
 
-frame = floor($t*30);
+frame = floor($t*35);
 
 
 // Measure this value with the PNG output image size
-image_vertical_size = 755;
+image_vertical_size = 760;
 
-N_neighbour_pairs_rendered = 10; // must be an even number
+N_neighbour_pairs_rendered = 12; // must be an even number
 N_prus_per_page = 9;
 current_first = N_prus_per_page*frame;
 
 vertical_offset = (twist_height+twist_gap)*current_first;
 
-//rotate([0,180,0])
+rotate([0,180,0]) // comment/uncomment for even/odd arrangement
 translate([0,0,-vertical_offset])
     for(pair = [current_first-N_neighbour_pairs_rendered/2 : current_first+N_neighbour_pairs_rendered/2])
         generate_twist(pair - 1);
