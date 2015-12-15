@@ -4,7 +4,7 @@
 
 Con motivo de la celebración de la [__OSHWDem 2015__][1] el día 7 de noviembre, y a partir de una idea de que surgió en la OSHWDem del año pasado al ver esta cadena de ADN que cuelga del techo de la Domus:
 
-![ADN](https://scontent-mad1-1.xx.fbcdn.net/hphotos-xpt1/t31.0-8/12141113_963354940404606_7521211884426296075_o.jpg)
+![ADN Domus](img/domus.jpg)
 
 Se propuso el __reto de imprimir las piezas de unión__ para algo similar con todas las piezas personalizadas con el número y nombre de la impresora __para formar lo que sería el ADN de Clone Wars__.
 
